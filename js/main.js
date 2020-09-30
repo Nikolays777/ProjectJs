@@ -1,34 +1,22 @@
 "use strict";
-if(4 == 9){
-  console.log('Ok');
-} else{
-  console.log('Error');
-}
 
-const num = 30;
+let num = 50;
 
-// if(num < 49){
-//   console.log('Error');
-// }else if(num === 50){
-//   console.log('Ok');
-// }else{
-//   console.log('Error');
+// while (num <= 55) {
+//       console.log(num);
+//       num++;
 // }
 
-// (num === 50) ? console.log('Ok') : console.log(false);
+// do{
+//   console.log(num);
+//   num++;
+// }
 
-switch (num) {
-  case 50:
-    console.log('true');
-    break;
-  case 30:
-    console.log('fff');
-    break;
-  case 49:
-    console.log('yop');
-    break;
+// while ( num < 55);
 
-  default:
-    console.log('Loky');
-    break;
+for (let i = 1; i <= 8; i++) {
+    if (i === 6) {
+      continue;
+    }
+    console.log(i);
 }
