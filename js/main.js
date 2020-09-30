@@ -1,19 +1,34 @@
 "use strict";
-const numberOfFilms = +prompt('Сколько фильмов?', '');
-// console.log(numberOfFilms);
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  general: [],
-  privat: false
-};
-const a = prompt('Последний', ''),
-      b = prompt('Оценка', ''),
-      c = prompt('Последний', ''),
-      d = prompt('Оценка', '');
+if(4 == 9){
+  console.log('Ok');
+} else{
+  console.log('Error');
+}
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+const num = 30;
 
-console.log(personalMovieDB);
+// if(num < 49){
+//   console.log('Error');
+// }else if(num === 50){
+//   console.log('Ok');
+// }else{
+//   console.log('Error');
+// }
+
+// (num === 50) ? console.log('Ok') : console.log(false);
+
+switch (num) {
+  case 50:
+    console.log('true');
+    break;
+  case 30:
+    console.log('fff');
+    break;
+  case 49:
+    console.log('yop');
+    break;
+
+  default:
+    console.log('Loky');
+    break;
+}
