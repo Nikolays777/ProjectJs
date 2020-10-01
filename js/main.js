@@ -1,36 +1,29 @@
 "use strict";
-let num = 20;
-function  showFirstMessage(text) {
-      console.log(text);
-      let num = 10;
-    }
 
-showFirstMessage('Привет тётя');
-console.log(num);
+const str = 'Win';
 
-function calc(a, b){
-  return (a + b);
-}
+// console.log(str[2]);
+// console.log(str.toUpperCase());
+// console.log(str[2].toUpperCase());
+// console.log(str[2].toLowerCase());
 
-console.log(calc(4,4));
+const fruit = 'Some fruit';
 
-function res(){
-  let num = 50;
-  return num;
-}
+console.log(fruit.indexOf('fruit')); //Поиск подстроки
 
-let anotherNum = res();
-console.log(anotherNum);
+const logg = 'Breadcramps';
 
-const logger = function(){
-    console.log('Hello');
-};
+// console.log(logg.slice(0, 11)); //вырезаем часть строки
+// console.log(logg.substring(0, 11)); //вырезаем часть строки
+console.log(logg.substr(2, 5)); //вырезаем часть строки
 
-logger();
+//Numbers
 
-let a = 3;
-let b = 4;
+const num = 12.2;
 
-const arrow = (a, b) => {
-    return (console.log(a + b));
-};
+console.log(Math.round(num));
+
+const test = '12.2px';
+
+// console.log(parseInt(test));
+console.log(parseFloat(test));
