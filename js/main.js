@@ -1,38 +1,36 @@
 "use strict";
-
-const numberOfFilms = prompt('Количество', '');
-const personalMovieDB = {
-        count: numberOfFilms,
-        movies: {},
-        actors: {},
-        genres: [],
-        privat: false 
-      };
-
-
-
-for(let i = 0; i < 2; i++ ){
-    const a = prompt('Последний', ''),
-          b = +prompt('Оценка', '');
-
-  if (a != null && b != null && a != '' && b != '' && a.length < 50){
-      personalMovieDB.movies[a] = b;
-      console.log('Good');
-    } else{
-      console.log('error');
-      i--;
+let num = 20;
+function  showFirstMessage(text) {
+      console.log(text);
+      let num = 10;
     }
+
+showFirstMessage('Привет тётя');
+console.log(num);
+
+function calc(a, b){
+  return (a + b);
 }
 
-if (personalMovieDB.count < 10){
-    console.log('Слишком мало фильмов');
-} else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
-    console.log('Довольно много фильмов');
-} else if (personalMovieDB.count > 30){
-    console.log('Киноман');
-}else{
-  console.log('error');
+console.log(calc(4,4));
+
+function res(){
+  let num = 50;
+  return num;
 }
 
-console.log(personalMovieDB);
+let anotherNum = res();
+console.log(anotherNum);
 
+const logger = function(){
+    console.log('Hello');
+};
+
+logger();
+
+let a = 3;
+let b = 4;
+
+const arrow = (a, b) => {
+    return (console.log(a + b));
+};
